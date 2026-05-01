@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    int sum;
+    float average;
+
+    cout << "Enter three integers: ";
+    cin >> a >> b >> c;
+
+    // Calculate sum
+    sum = a + b + c;
+
+    // Calculate average
+    average = sum / 3.0;
+
+    cout << "Sum = " << sum << endl;
+    cout << "Average = " << average << endl;
+
+    return 0;
+}
