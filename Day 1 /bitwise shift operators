@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout << "Enter value of a: ";
+    cin >> a;
+
+    cout << "Enter value of b: ";
+    cin >> b;
+
+    // Multiply a by 4 (2^2) using left shift
+    int multiplyResult = a << 2;
+
+    // Divide b by 8 (2^3) using right shift
+    int divideResult = b >> 3;
+
+    cout << "a * 4 using left shift: " << multiplyResult << endl;
+    cout << "b / 8 using right shift: " << divideResult << endl;
+
+    return 0;
+}
