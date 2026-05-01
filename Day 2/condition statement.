@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    cout << "Enter age of Person A: ";
+    cin >> age;
+
+    // Condition statements
+    if (age >= 18) {
+        cout << "Person A is an Adult." << endl;
+    } 
+    else if (age >= 13) {
+        cout << "Person A is a Teenager." << endl;
+    } 
+    else {
+        cout << "Person A is a Child." << endl;
+    }
+
+    return 0;
+}
