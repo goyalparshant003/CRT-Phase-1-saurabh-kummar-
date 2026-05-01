@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, max;
+
+    cout << "Enter two integers: ";
+    cin >> a >> b;
+
+    // Using ternary operator to find maximum
+    max = (a > b) ? a : b;
+
+    cout << "Maximum value = " << max << endl;
+
+    return 0;
+}
