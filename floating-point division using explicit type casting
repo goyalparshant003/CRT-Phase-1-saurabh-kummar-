@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+// Global variable
+int globalVar = 200;
+
+int main() {
+    int userInput;
+    double result;
+
+    cout << "Enter an integer: ";
+    cin >> userInput;
+
+    // Explicit type casting for floating-point division
+    result = (double)globalVar / userInput;
+
+    cout << "Result after division: " << result << endl;
+
+    return 0;
+}
