@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A = 3, B = 5;
+
+    int sum = A + B;
+    int difference = A - B;
+    int product = A * B;
+    float division = (float)A / B;
+
+    cout << "A = " << A << ", B = " << B << endl;
+    cout << "Addition: " << sum << endl;
+    cout << "Subtraction: " << difference << endl;
+    cout << "Multiplication: " << product << endl;
+    cout << "Division: " << division << endl;
+
+    return 0;
+}
