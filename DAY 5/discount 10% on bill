@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+void applyDiscount(float &billAmount) {
+    billAmount = billAmount - (billAmount * 0.10);
+}
+
+int main() {
+    float bill;
+
+    cout << "Enter original bill amount: ";
+    cin >> bill;
+
+    applyDiscount(bill); 
+
+    cout << "Bill amount after 10% discount: " << bill << endl;
+
+    return 0;
+}
