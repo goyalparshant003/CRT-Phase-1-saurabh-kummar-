@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+void calculateVolume(int bottles) {
+    int totalVolume = bottles * 250; 
+    cout << "Total volume of coke: " << totalVolume << " ml" << endl;
+}
+int main() {
+    int bottles;
+    
+    cout << "Enter number of coke bottles: ";
+    cin >> bottles;
+
+    calculateVolume(bottles);
+
+    return 0;
+}
