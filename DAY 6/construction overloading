@@ -1,0 +1,71 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Student {
+    string name;
+    int rollNo;
+    string email;
+    string mobile;
+    string batch;
+    string crtClass;
+
+    // Default constructor
+    Student() {
+        name = "N/A";
+        rollNo = 0;
+        email = "N/A";
+        mobile = "N/A";
+        batch = "N/A";
+        crtClass = "N/A";
+    }
+
+    // Parameterized constructor (basic details)
+    Student(string n, int r) {
+        name = n;
+        rollNo = r;
+        email = "N/A";
+        mobile = "N/A";
+        batch = "N/A";
+        crtClass = "N/A";
+    }
+
+    // Fully parameterized constructor
+    Student(string n, int r, string e, string m, string b, string c) {
+        name = n;
+        rollNo = r;
+        email = e;
+        mobile = m;
+        batch = b;
+        crtClass = c;
+    }
+
+    // Function to display details
+    void display() {
+        cout << "\nStudent Details:\n";
+        cout << "Name      : " << name << endl;
+        cout << "Roll No   : " << rollNo << endl;
+        cout << "Email ID  : " << email << endl;
+        cout << "Mobile No : " << mobile << endl;
+        cout << "Batch     : " << batch << endl;
+        cout << "CRT Class : " << crtClass << endl;
+    }
+};
+
+int main() {
+    // Using default constructor
+    Student s1;
+    
+    // Using constructor with 2 parameters
+    Student s2("Rahul", 101);
+    
+    // Using full constructor
+    Student s3("Anita", 102, "anita@gmail.com", "9876543210", "2024", "A");
+
+    // Display details
+    s1.display();
+    s2.display();
+    s3.display();
+
+    return 0;
+}
