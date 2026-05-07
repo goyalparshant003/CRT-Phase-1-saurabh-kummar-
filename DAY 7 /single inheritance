@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class A {
+public:
+    void show() {
+        cout << "This is Base class" << endl;
+    }
+};
+
+// Derived class
+class B : public A {
+public:
+    void display() {
+        cout << "This is Derived class" << endl;
+    }
+};
+
+int main() {
+    B obj;
+
+    obj.show();     // Base class function
+    obj.display();  // Derived class function
+
+    return 0;
+}
