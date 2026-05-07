@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+// Base class 1
+class A {
+public:
+    void showA() {
+        cout << "Class A" << endl;
+    }
+};
+
+// Base class 2
+class B {
+public:
+    void showB() {
+        cout << "Class B" << endl;
+    }
+};
+
+// Derived class
+class C : public A, public B {
+public:
+    void showC() {
+        cout << "Class C" << endl;
+    }
+};
+
+int main() {
+    C obj;
+
+    obj.showA();  // From class A
+    obj.showB();  // From class B
+    obj.showC();  // From class C
+
+    return 0;
+}
