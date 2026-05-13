@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+// Recursive function to calculate sum of digits
+int sumOfDigits(int n) {
+    // Base case
+    if (n == 0)
+        return 0;
+
+    // Recursive case
+    return (n % 10) + sumOfDigits(n / 10);
+}
+int main() {
+    int number = 687295321;
+    int result = sumOfDigits(number); 
+    cout << "Sum of digits = " << result << endl;
+
+    return 0;
+}
